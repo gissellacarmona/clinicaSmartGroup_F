@@ -14,10 +14,10 @@
 
 
 
-<SCript>
-    import axios form 'axios';
+<script>
+    import axios from 'axios';
     export default {
-        name: 'login'
+        name: 'login',
         data: function(){
             return{
                 user:{
@@ -29,13 +29,13 @@
         methods:{
             formato_login: function(){
                 axios.post(
-                    "https://"
+                    "http://127.0.0.1:8000/admin/login/?next=/admin/",
                 this.user,
                 {heater:{} }
                 )
                 .then((result)=>{
                 let dataLogIn= {
-                    username: this.user.username
+                    username: this.user.username,
                     token_acces: result.data.acces,
                     token_refresh:result.data.refresh,
                     }

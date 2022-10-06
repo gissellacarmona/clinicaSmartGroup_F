@@ -1,4 +1,4 @@
-import { hasOwnMetadata } from 'core-js/fn/reflect';
+"import { hasOwnMetadata } from 'core-js/fn/reflect';"
 import { createRouter, createWebHashHistory } from 'vue-router'
 import App from './App.vue';
 

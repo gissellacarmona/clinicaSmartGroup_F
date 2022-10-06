@@ -9,10 +9,10 @@
           <button v-if="!is_auth" v-on:click="loadHome">Inicio</button>
         </nav>
       </div>
-     <div class="main-componet">
-      <router-view>
-          v-on:completedLogIn="completedLogIn"
-          v-on:completedSignUp="completedSignUp"
+      <div class="main-componet">
+        <router-view
+          v-on:completedLogIn="completedLogIn">
+          <!-- v-on:completedSignUp="completedSignUp" -->
         </router-view>
       </div>
       <div class="footer">
@@ -22,18 +22,19 @@
 </template>
 
 
-
 <!--ESTA PARTE HACER REFERENCIA A JAVASCRIPT -->
 <script>
   export default{
-    name: 'App'
+    name: 'Login',
     data: function(){
       return{
-        is_auth:false
+        user:{
+          username:"",
+          password:""
+        }
       }
     },
-    components:{},
-
+  
     methods:{
       verifyAuth:function(){
         this.is_auth = localStorage.getItem("isAuth")|| false;
