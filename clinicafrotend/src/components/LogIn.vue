@@ -8,13 +8,11 @@
                 <input type="password" v-model="user.password" placeholder="Contraseña">
                 <button type="submit">Iniciar Sesión</button>
             </form>
-
-
         </div>
-
-    </div>
-    
+    </div>  
 </template>
+
+
 
 <SCript>
     import axios form 'axios';

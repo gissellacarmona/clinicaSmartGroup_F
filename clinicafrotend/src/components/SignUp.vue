@@ -13,18 +13,19 @@
                     <input type="password" placeholder="password">
                     <button>Registrarse</button>
             </form>
-
-
         </div>
-
-    </div>
-    
+    </div>   
 </template>
+
+
 
 <SCript>
 
 
 </SCript>
+
+
+
 
 <!--PARTE VISUAL DEL FORMATO REGISTRO-->
 <style>
